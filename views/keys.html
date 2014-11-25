@@ -1,0 +1,42 @@
+
+<div class="jumbotron">
+    <h2>Redis keys</h2>
+    <br/>
+    <br/>
+
+    <% for(var prop in patterns){ %>
+
+        <div class="row" style="margin-bottom: 30px; text-align: left" >
+
+            <h4><%= patterns[prop].description %></h4>
+
+            <div class="col-md-12">
+
+                <div class="form-inline myform" role="form" id="<%= prop %>_Form" action="/redis/getKeyValue">
+                    <% var i = 0;
+                      for(var keyItem in patterns[prop].keyArray){ %>
+                     <%
+                           if(patterns[prop].keyArray[keyItem] != '') { %>
+                            <div class="form-group">
+                                <label style="width: 100px" class="col-sm-4 control-label"><%= patterns[prop].keyArray[keyItem] %></label>
+                            </div>
+                        <% } else { %>
+                            <div class="form-group">
+                                <input type="text" style="width: 140px" id="<%= keyItem %>_var" name="<%= i %>_variable" class="form-control" value="<%= patterns[prop].variables[i] %>">
+                            </div>
+                        <% i = i+1; } %>
+                    <% } %>
+                    <div class="form-group">
+                        <!--<input type="hidden" id="<%= prop %>_pattern" name="keyName" class="form-control" value="<%= patterns[prop].name %>">-->
+                        <input type="hidden" id="<%= prop %>_key" name="key" class="form-control" value="<%= patterns[prop].key %>">
+                        <input type="hidden" id="<%= prop %>_type" name="type" class="form-control" value="<%= patterns[prop].type %>">
+                        <input type="hidden" id="<%= prop %>_db" name="redisDb" class="form-control" value="<%= patterns[prop].redisDb %>">
+                    </div>
+
+                    <button type="button" id="<%= prop %>_View" class="btn btn-primary mybutton">View</button>
+                </div>
+            </div>
+        </div>
+
+    <% } %>
+</div>

@@ -1,0 +1,7 @@
+{
+    "name": "redis-patterns admin dashboard",
+    "description": "A simple dashboard",
+    "repository": "",
+    "logo": "",
+    "keywords": ["redis","patterns","keys","express", "static"]
+}

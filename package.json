@@ -1,0 +1,40 @@
+{
+    "name": "redis-patterns",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "1.9.0",
+        "ejs": "~1.0.0",
+        "elasticsearch": "2.4.3",
+        "express": "3.5.1",
+        "mysql": "2.5.1",
+        "redis": "0.11.0",
+        "express-winston" : "0.2.1",
+        "winston" : "0.7.2",
+        "underscore": "1.5.2",
+        "async" : "0.2.9",
+        "string-template": "0.2.0"
+    },
+    "engines": {
+        "node": "0.10.x"
+    },
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "keywords": [
+        "rainbowtgx",
+        "redis",
+        "express",
+        "monitor"
+    ],
+    "author": "Danilo Balocco",
+    "contributors": [
+        "Danilo Balocco <danilo.balocco@gmail.com>"
+    ],
+    "license": "MIT"
+}
