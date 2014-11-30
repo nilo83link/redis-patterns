@@ -26,7 +26,7 @@
             "name": "Third key",
             "description": "Return site's users",
             "key": "site:{0}:users",
-            "type": "LIST",
+            "type": "LRANGE",
             "redisDb": 16,
             "variables": [
                 "SiteGUID"

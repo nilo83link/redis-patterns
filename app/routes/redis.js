@@ -50,7 +50,7 @@ exports.getKeyValue = function(request, response){
                 logger.debug(reply);
                 response.json(reply);
             });
-        } else if (type == "LIST") {
+        } else if (type == "LRANGE") {
             redisClient.lrange(complexKey, 0, -1, function(err, reply){
                 if(err){
                     logger.info(err);
