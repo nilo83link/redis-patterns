@@ -7,6 +7,12 @@ A simple Node.js web interface. Allow developers to inspect Redis keys without r
 
 Configuration
 =============
+
+Supported key command:
+- HGETALL
+- GET
+- LRANGE
+
 ```json
 {
     "host": "localhost",
@@ -36,7 +42,7 @@ Configuration
             "name": "Third key",
             "description": "Return site's users",
             "key": "site:{0}:users",
-            "type": "LIST",
+            "type": "LRANGE",
             "redisDb": 16,
             "variables": [
                 "SiteGUID"
