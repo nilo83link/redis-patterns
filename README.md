@@ -8,7 +8,6 @@ A simple Node.js web interface. Allow developers to inspect Redis keys without r
 Configuration
 =============
 
-<code>
 {
     "host": "localhost",
     "port": 6379,
@@ -45,5 +44,4 @@ Configuration
         }
     ]
 }
-</code>
 
