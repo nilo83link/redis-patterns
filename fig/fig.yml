@@ -1,0 +1,6 @@
+redis:
+   image: redis
+   net: "host"
+   ports:
+    - "6379:6379"
+
