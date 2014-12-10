@@ -9,6 +9,8 @@ A simple Node.js web interface. Allow developers to inspect Redis keys without r
 First example
 =============
 
+As the examples below show, every redis response will be converted into javascript format.
+
 ![example](https://github.com/nilo83link/redis-patterns/blob/master/public/images/example-redis-patterns.png)
 
 Configuration
