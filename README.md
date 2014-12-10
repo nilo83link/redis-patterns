@@ -5,8 +5,11 @@ A simple Node.js web interface. Allow developers to inspect Redis keys without r
 
 ![screenshot](https://github.com/nilo83link/redis-patterns/blob/master/public/images/screenshot-redis-patterns.png)
 
-![example](https://github.com/nilo83link/redis-patterns/blob/master/public/images/example-redis-patterns.png)
 
+First example
+=============
+
+![example](https://github.com/nilo83link/redis-patterns/blob/master/public/images/example-redis-patterns.png)
 
 Configuration
 =============
@@ -54,3 +57,20 @@ Supported key command:
     ]
 }
 ```
+
+Fig support
+===========
+
+If you want to start a docker container with a clear Redis Instance there is a fig.yml file into the fig directory.
+
+```yaml
+redis:
+   image: redis
+   net: "host"
+   ports:
+    - "6379:6379"
+```
+
+
+
+
