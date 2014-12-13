@@ -1,10 +1,10 @@
 var redis = require('redis');
-var format = require("string-template")
+var format = require("string-template");
 
 var logger = require('../utils/logger').logger();
 var redisConfig = require('../../conf/cluster-config.json');
 
-exports.getKeyValue = function(request, response){
+exports.getKeyValue = function (request, response) {
 
     var redisHost = redisConfig.host;
     var redisPort = redisConfig.port;
