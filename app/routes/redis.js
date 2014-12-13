@@ -80,7 +80,7 @@ exports.getConfig = function(request, response) {
         }
 
         var trueKey = format(key, variables);
-        logger.info("trueKey: " + trueKey);
+        //logger.info("trueKey: " + trueKey);
 
         var complexKey = format(key, nullArray);
         var complexKeyArray = complexKey.split("|", 5);
