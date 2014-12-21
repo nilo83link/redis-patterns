@@ -1,7 +1,7 @@
 redis-patterns
 ==============
 
-A simple Node.js web interface. Allow developers to inspect Redis keys without remember key patterns. 
+A simple Node.js web interface. Allow developers to inspect Redis keys without remembering key patterns. 
 
 ![screenshot](https://github.com/nilo83link/redis-patterns/blob/master/public/images/screenshot-redis-patterns.png)
 
