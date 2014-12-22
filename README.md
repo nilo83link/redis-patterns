@@ -6,8 +6,6 @@ A simple Node.js web interface. Allow developers to inspect Redis keys without r
 ![screenshot](https://github.com/nilo83link/redis-patterns/blob/master/public/images/screenshot-redis-patterns.png)
 
 
-mio_branch
-
 First example
 =============
 
